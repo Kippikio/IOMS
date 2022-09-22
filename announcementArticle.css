@@ -2,7 +2,7 @@ announcement-article {
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
-    overflow: none;
+    overflow: visible;
 }
 h1 {
     margin: 0px;
