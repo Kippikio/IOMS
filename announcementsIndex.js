@@ -18,7 +18,7 @@
 
             };
 
-            _xhr.open("GET", "announcementsJSON.json", true);
+            _xhr.open("GET", "announcements.json", true);
             _xhr.send();
 
     }
