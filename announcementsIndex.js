@@ -11,7 +11,7 @@
                 if (this.readyState == 4 && this.status == 200) {
                 
                     // Typical action to be performed when the document is ready:
-                    typeof _readyCallback === "function" ? _readyCallback(_xhr.responseXML) : 
+                    typeof _readyCallback === "function" ? _readyCallback(_xhr.response) : 
                         console.error("TypeError: _readyCallback type not equal to function. Found type, " + typeof _readyCallback);
 
                 }
