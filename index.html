@@ -3,26 +3,38 @@
 
     <head>
 
-        <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" href="announcementIndex.css" />
+        <link rel="stylesheet" href="announcementArticle.css" />
+
+        <script type="text/javascript" src="announcementsIndex.js"></script>
+        <script type="text/javascript" src="announcementArticle.js"></script>
 
     </head>
 
     <body>
 
-        <announcements-index>
+        <announcements-index id="applicationContainer">
         
-            <header>
+            <header id="announmentMenu" data-header="true">
+
                 <h1>IOMS | Announcements Repository</h1>
-                <select>
-                    
+                
+                <select id="article-selections" data-selection="true">
                 </select>
+                
+                <menu data-interface="true">
+                    <button>Next</button>
+                    <input type="number" min="1" value="1" />
+                    <button>Previous</button>
+                </menu>
+            
             </header>
 
-            <article>
+            <announcement-article data-viewer="true">
+                
+            </announcement-article>
 
-            </article>
-
-            <footer>
+            <footer data-menu="true">
                 
             </footer>
         
